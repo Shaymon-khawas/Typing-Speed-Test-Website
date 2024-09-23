@@ -39,13 +39,13 @@ function calculateAccuracy() {
     const inputText = userInput.value;
     let correctChars = 0;
 
-    for (let i = 0; i < Math.min(inputText.length, sampleText.length); i++) {
+    for (let i = 0; i < inputText.length; i++) {
         if (inputText[i] === sampleText[i]) {
             correctChars++;
         }
     }
 
-    return (correctChars / sampleText.length) * 100;
+    return (correctChars / inputText.length) * 100;
 }
 
 function updateMetrics() {

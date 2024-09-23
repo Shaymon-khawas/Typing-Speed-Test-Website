@@ -65,7 +65,7 @@ button:hover {
 }
 
 .metrics span {
-  display: inline-block;
+  display: flex;
   margin: 0 15px;
 }
 
